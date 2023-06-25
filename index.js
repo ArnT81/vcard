@@ -9,6 +9,14 @@ if (process.env.NODE_ENV !== 'production') {
 }
 const { PORT, SSL_KEY, SSL_CERT } = process.env
 
+const origin = __dirname.includes('Desktop') ? 'http://localhost:5500' : 'https://arnt.hopto.org/businesscard';
+
+
+app.use(cors({
+	origin: origin,
+	methods: ['GET'],
+	credentials: true,
+}));
 
 //set properties
 vCard.firstName = 'Anders';

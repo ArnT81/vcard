@@ -2,9 +2,9 @@
   "name": "vcard",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "vcard.js",
   "scripts": {
-    "start": "nodemon index"
+    "start": "nodemon vcard"
   },
   "author": "Anders Söderberg",
   "license": "ISC",

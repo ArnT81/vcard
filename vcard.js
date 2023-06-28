@@ -16,6 +16,7 @@ const origin = __dirname.includes('Desktop') ? 'http://127.0.0.1:5500' : 'https:
 
 app.use(cors({
 	origin: origin,
+	// origin: '*',
 	methods: ['GET'],
 }));
 
@@ -30,7 +31,8 @@ vCard.logo.embedFromFile('./media/AndersSöderberg.png');
 vCard.cellPhone = '+46735311606';
 vCard.email = 'anders_soderberg@hotmail.com';
 vCard.title = 'Webbutvecklare';
-vCard.url = 'https://arnt.hopto.org';
+// vCard.url = 'https://arnt.hopto.org';
+vCard.url = 'www.anderssöderberg.se';
 // vCard.homeAddress.label = 'Home';
 vCard.homeAddress.street = 'Movägen 8';
 vCard.homeAddress.postalCode = '342 50';

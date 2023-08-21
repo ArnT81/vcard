@@ -25,7 +25,7 @@ app.use(cors({
 vCard.firstName = 'Anders';
 vCard.lastName = 'Söderberg';
 // vCard.organization = 'None';
-vCard.logo.embedFromFile('./media/AndersSöderberg.png');
+vCard.logo.embedFromFile('./media/head.webp');
 // vCard.photo.attachFromUrl('https://arnt.hopto.org/image', 'PNG'); //!Funkar inte
 // vCard.photo.embedFromString(base64, 'image/png');		//funkar med
 vCard.cellPhone = '+46735311606';
